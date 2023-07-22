@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox</title>
+  <meta name="description" content="Description of your website">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Your CSS styles go here */
+  </style>
+  
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to the Sandbox!</h1>
+    <aside>
+      <h3>Today we are trying out html tags!</h3>
+      <p>For starters, we have different kinds of text.</p>
+    </aside>
+
+    <br>
+
+    <b>Bold text</b>
+    <i>Italic text</i>
+    <strong>Strong text</strong>
+    <em>Emphasized text</em>
+    <code>Inline code</code>
+
+    <pre>
+      <code>
+        Code block
+      </code>
+    </pre>
+
+    <p>below this I've put a horizontal line</p>
+    <hr>
+
+    <br>
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Here is a link</a>
+
+    <br>
+    
+    <p>this is a frame:</p>
+    <iframe src="https://example.com"></iframe>
+
+    <br>
+
+    <p>this is an audio file of a cow going "moo"</p>
+    <audio controls>
+      <source src="src/moo.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>this is sample video file</p>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    
+    <br>
+    <p>below this we use svg with inline tag usage to draw a trapezoid</p>
+
+    <svg width="400" height="400">
+      <circle cx="200" cy="200" r="100" fill="red"></circle>
+    </svg>
+
+    <br>
+     <p>Below this, we use the canvas element with a little JavaScript usage to draw a linear gradient:</p>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+
+      // Create gradient
+      const gradient = ctx.createLinearGradient(0, 0, 200, 0);
+      gradient.addColorStop(0, 'red');
+      gradient.addColorStop(1, 'white');
+
+      // Fill with gradient
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 200, 100);
+    </script>
+
+    <br>
+    
+    <ol>
+      <li>Numbered List item 1</li>
+      <li>Numbered List item 2</li>
+    </ol>
+
+    <p>here is a form</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <fieldset>
+        <legend>Choose your preferred programming language:</legend>
+        <input type="radio" id="java" name="language" value="java">
+        <label for="java">Java</label><br>
+        <input type="radio" id="python" name="language" value="python">
+        <label for="python">Python</label><br>
+        <input type="radio" id="javascript" name="language" value="javascript">
+        <label for="javascript">JavaScript</label>
+      </fieldset>
+
+     
+
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+        <option value="Opera">
+      </datalist>
+
+      <label for="browser">Choose your browser:</label>
+      <input list="browsers" id="browser" name="browser">
+
+      <br>
+
+      <p>You must choose one. Will it be fruit or veggie?</p>
+      <select>
+        <optgroup label="Fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="orange">Orange</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+          <option value="carrot">Carrot</option>
+          <option value="broccoli">Broccoli</option>
+          <option value="cucumber">Cucumber</option>
+        </optgroup>
+      </select>
+
+      <p>here's a details </p>
+      <details>
+        <summary>More details</summary>
+        <p>Additional information.</p>
+      </details>
+
+      <button type="button">Click Me</button>
+
+      <template>
+        <p>Template content</p>
+      </template>
+    </form>
+
+    <br>
+
+    <table>
+      <caption>This is a table</caption>
+      <colgroup>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Column1</th>
+          <th>Column2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data1</td>
+          <td>Data3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>What happened to Data2? Anyway, heres a figure, which is some self-contained content 
+    that can be addressed and altered as a whole unit. Here we use a picture of a stormtrooper, and give it a caption.</p>
+
+    <figure>
+      <img src="src/stormtrooper.jpg" alt="Image" width="90" height="90">
+      <figcaption>Stormy</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>Footer content</p>
+  </footer>
+</body>
+
+</html>
