@@ -1,0 +1,277 @@
+  /*  */
+  
+  
+  /* Reset default margin and padding for all elements */
+  body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a default font family and size for the entire document */
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style the navigation links */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the main content */
+  main {
+    flex : 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 15%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+
+
+  /*Form Styling*/
+    form{
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      right: 0;
+    }
+
+
+    /* Style the form labels */
+    form label {
+      display: block;
+      font-weight: bold;
+    }
+
+    /* Style the form inputs and textarea */
+    form input,
+    form textarea {
+      display: block;
+      width: 60%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Style the submit button */
+    form button {
+      display: block;
+      width: 25%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Hover effect for the submit button */
+    form button:hover {
+      background-color: #555;
+    }
+
+
+
+  /* Custom Font Stuff */
+    /* Define the font family as a CSS variable */
+    :root {
+      --custom-font: 'Menzanine';
+    }
+
+    /* Define the @font-face rule using the CSS variable */
+    @font-face {
+      font-family: var(--custom-font);
+      src: url('/src/fonts/Menzanine.eot');
+      src: url('/src/fonts/Menzanine.eot?#iefix') format('embedded-opentype'),
+          url('/src/fonts/Menzanine.woff2') format('woff2'),
+          url('/src/fonts/Menzanine.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Use the custom font for specific elements */
+    #custom-font {
+      font-family: var(--custom-font), Georgia, serif; /* Use the custom font with fallbacks */
+    }
+
+
+
+
+
+
+  /*Projects Page Styles*/
+    /* Style the header */
+    h2 {
+      margin-bottom: 20px; /* Add some margin below the header */
+    }
+
+    /* Style the projects list */
+    #projects-list {
+      padding: 20px; /* Add some padding around the content inside the div */
+      /*border: 1px solid #ccc; /* Add a border for visual separation */
+      border-radius: 4px; /* Round the corners of the div */
+    }
+
+    /* Style the project titles */
+    #projects-list h3 {
+      margin-top: 10px; /* Add some space above each project title */
+    }
+
+    /* Style the project descriptions */
+    #projects-list p {
+      margin-bottom: 10px; /* Add some space below each project description */
+    }
+
+    /* Animation for Projects */
+    @keyframes slideInFromLeft {
+      0% { opacity: 0; transform: translateX(-100%); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Apply the animation to the element */
+    .animate {
+      animation: slideInFromLeft 2s ease-in-out;
+    }
+  
+    /*Transition for Projects*/
+    .transition {
+      transition: all 0.5s ease-in-out;
+    }
+
+    /* Hover effect */
+    .transition:hover {
+      background-color: #3498db;
+      color: #fff;
+      transform: scale(1.2);
+      font-family: var(--custom-font), Georgia, serif;
+    }
+    /*Tranform for Projects*/
+    .transform:hover {
+      transform: rotate(45deg) scale(1.5);
+      background-color: #932415;
+      color: rgb(240, 221, 239);
+      padding: 10px;
+      font-family: var(--custom-font), Georgia, serif;
+    }
+
+
+
+
+  /* Style the .skills-section class */
+    body#skills-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skills-section {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+
+    /* Style the skill headings */
+    .skills-section h2,
+    .skills-section h3 {
+      margin: 10px 0;
+      font-weight: bold;
+
+    }
+
+    /* Style the skill lists */
+    .skills-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+
+    .skills-section li {
+      padding: 5px 0;
+    }
+
+    /* Add some space between the lists */
+    .skills-section ul + h3 {
+      margin-top: 20px;
+    }
+
+
+
+
+
+    
+  /* Media query for responsive design */
+    @media (max-width: 768px) {
+      /* Adjust the header and navigation for smaller screens */
+      header {
+        padding: 5px;
+      }
+      
+      nav ul {
+        flex-direction: column;
+
+      }
+      
+      nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    
